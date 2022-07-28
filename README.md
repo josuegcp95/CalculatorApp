@@ -1,8 +1,11 @@
 # CalculatorApp
 
 ### Screen Shots
-![CalculatorApp(1)](https://user-images.githubusercontent.com/82785695/172495694-d4224308-3619-41f6-9547-90ebd768130e.png)
-![CalculatorApp(2)](https://user-images.githubusercontent.com/82785695/172495707-8250d4b1-dc55-467d-a6c6-831c671e4d45.png)
+![CalculatorApp(1)](https://user-images.githubusercontent.com/82785695/181600468-de4279b3-5998-429e-b933-1ca121026b76.png)
+![CalculatorApp(2)](https://user-images.githubusercontent.com/82785695/181600479-ddbab805-638b-4cde-b403-9cc1c9f77b14.png)
+
+
+
 
 ---
 
