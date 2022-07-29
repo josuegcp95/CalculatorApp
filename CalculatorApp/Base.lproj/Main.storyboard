@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Calculator View Controller-->
         <scene sceneID="grf-2A-PBz">
             <objects>
-                <viewController id="Mop-cQ-aXb" customClass="MainViewController" customModule="CalculatorApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Mop-cQ-aXb" customClass="CalculatorViewController" customModule="CalculatorApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="PUc-51-BKJ" userLabel="Outter View">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -312,18 +312,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zk1-HX-nvu">
                                 <rect key="frame" x="24" y="234" width="342" height="128"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5+5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcd-Ud-mg0" userLabel="Workings">
-                                        <rect key="frame" x="-1" y="0.0" width="342" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5+5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcd-Ud-mg0" userLabel="Workings">
+                                        <rect key="frame" x="132.33333333333334" y="-16" width="75.333333333333343" height="48"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vvj-2f-V6X" userLabel="Results">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vvj-2f-V6X" userLabel="Results">
                                         <rect key="frame" x="53" y="60" width="234" height="45"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="jf8-NP-ZmA"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -331,8 +332,13 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="Vvj-2f-V6X" firstAttribute="top" secondItem="kcd-Ud-mg0" secondAttribute="bottom" constant="28" id="2PI-pQ-M8h"/>
+                                    <constraint firstItem="Vvj-2f-V6X" firstAttribute="centerX" secondItem="kcd-Ud-mg0" secondAttribute="centerX" id="BAM-tD-V6D"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vvj-2f-V6X" secondAttribute="trailing" constant="55" id="W5v-B8-viy"/>
                                     <constraint firstAttribute="width" constant="342" id="Xb1-E6-Ih2"/>
                                     <constraint firstAttribute="height" constant="128" id="gSu-CZ-HKa"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vvj-2f-V6X" secondAttribute="bottom" constant="23" id="h7W-lI-Ceo"/>
+                                    <constraint firstItem="Vvj-2f-V6X" firstAttribute="leading" secondItem="Zk1-HX-nvu" secondAttribute="leading" constant="53" id="i9I-gY-vVi"/>
                                 </constraints>
                             </view>
                         </subviews>

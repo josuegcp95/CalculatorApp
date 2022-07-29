@@ -2,7 +2,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class CalculatorViewController: UIViewController {
     @IBOutlet weak var calculatorWorkings: UILabel!
     @IBOutlet weak var calculatorResults: UILabel!
     var workings: String = ""
@@ -33,42 +33,55 @@ class MainViewController: UIViewController {
             return String(format: "%.1f", result)
         }
     }
-    //MARK: - Equals Button Tapped
+    //MARK: - EqualsTapped
     @IBAction func equalsTapped(_ sender: Any) {
+        if !workings.isEmpty{
             let checkedWorkingsForPercent = workings.replacingOccurrences(of: "%", with: "*0.01")
             let expression = NSExpression(format: checkedWorkingsForPercent)
             let result = expression.expressionValue(with: nil, context: nil) as! Double
             let resultString = formatResult(result: result)
             calculatorResults.text = resultString
+        } else {
+            let alertController = UIAlertController(title: "Please enter numbers to calculate", message: "Press OK to Continue", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alertController, animated: true, completion: nil)
+        }
     }
-    //MARK: - Back Tapped
+    //MARK: - BackTapped
     @IBAction func backTapped(_ sender: Any) {
         if(!workings.isEmpty) {
             workings.removeLast()
             calculatorWorkings.text = workings
         }
     }
-    //MARK: - Clear Tapped
+    //MARK: - ClearTapped
     @IBAction func clearTapped(_ sender: Any) {
         clearAll()
     }
-    //MARK: - Divide Tapped
+    //MARK: - DivideTapped
     @IBAction func divideTapped(_ sender: Any) {
         addToWorkings(value: "/")
     }
-    //MARK: - Multiply Tapped
+    //MARK: - MultiplyTapped
     @IBAction func multiplyTapped(_ sender: Any) {
         addToWorkings(value: "*")
     }
-    //MARK: - Plain Button Tapped
+    //MARK: - PlainButtonTapped
     @IBAction func plainButtonTapped(_ sender: UIButton) {
         if let value = sender.titleLabel?.text {
             addToWorkings(value: value)
         }
     }
 }
-
-
+//MARK: - TestMethods
+extension CalculatorViewController {
+    func addToWorkingsTestMethod (value: String) {
+        workings = workings + value
+    }
+    func clearAllTestMethod ( ) {
+        workings = ""
+    }
+}
 
 
 
