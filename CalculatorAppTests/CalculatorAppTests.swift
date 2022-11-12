@@ -4,7 +4,6 @@ import XCTest
 @testable import CalculatorApp
 
 class CalculatorAppTests: XCTestCase {
-    
     // sut: System Under Test
     var sut: CalculatorViewController!
 
@@ -24,7 +23,7 @@ class CalculatorAppTests: XCTestCase {
     }
     
     //MARK:  FormartResult Test
-    func testFormatResult_CovertDoubleToString() {
+    func testFormatResult_ConvertDoubleToString() {
        let result = sut.formatResult(result: 23.0)
         XCTAssertTrue(result == "23")
     }

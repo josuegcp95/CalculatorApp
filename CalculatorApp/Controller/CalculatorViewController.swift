@@ -14,18 +14,18 @@ class CalculatorViewController: UIViewController {
         calculatorResults.clipsToBounds = true
         clearAll()
     }
-    //MARK: - ClearAll
+    //MARK:  ClearAll
     func clearAll ( ) {
         workings = ""
         calculatorWorkings.text = ""
         calculatorResults.text = ""
     }
-    //MARK: - AddToWorkings
+    //MARK:  AddToWorkings
     func addToWorkings (value: String) {
         workings = workings + value
         calculatorWorkings.text = workings
     }
-    //MARK: - FormartResult
+    //MARK:  FormartResult
     func formatResult(result: Double) -> String {
         if(result.truncatingRemainder(dividingBy: 1) == 0) {
             return String(format: "%.0f", result)
@@ -33,7 +33,7 @@ class CalculatorViewController: UIViewController {
             return String(format: "%.1f", result)
         }
     }
-    //MARK: - EqualsTapped
+    //MARK:  EqualsTapped
     @IBAction func equalsTapped(_ sender: Any) {
         if !workings.isEmpty{
             let checkedWorkingsForPercent = workings.replacingOccurrences(of: "%", with: "*0.01")
@@ -47,33 +47,34 @@ class CalculatorViewController: UIViewController {
             present(alertController, animated: true, completion: nil)
         }
     }
-    //MARK: - BackTapped
+    //MARK:  BackTapped
     @IBAction func backTapped(_ sender: Any) {
         if(!workings.isEmpty) {
             workings.removeLast()
             calculatorWorkings.text = workings
         }
     }
-    //MARK: - ClearTapped
+    //MARK:  ClearTapped
     @IBAction func clearTapped(_ sender: Any) {
         clearAll()
     }
-    //MARK: - DivideTapped
+    //MARK:  DivideTapped
     @IBAction func divideTapped(_ sender: Any) {
         addToWorkings(value: "/")
     }
-    //MARK: - MultiplyTapped
+    //MARK:  MultiplyTapped
     @IBAction func multiplyTapped(_ sender: Any) {
         addToWorkings(value: "*")
     }
-    //MARK: - PlainButtonTapped
+    //MARK:  PlainButtonTapped
     @IBAction func plainButtonTapped(_ sender: UIButton) {
         if let value = sender.titleLabel?.text {
             addToWorkings(value: value)
         }
     }
 }
-//MARK: - TestMethods
+
+//MARK: TestMethods
 extension CalculatorViewController {
     func addToWorkingsTestMethod (value: String) {
         workings = workings + value

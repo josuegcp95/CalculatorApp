@@ -12,7 +12,7 @@
         <scene sceneID="grf-2A-PBz">
             <objects>
                 <viewController id="Mop-cQ-aXb" customClass="CalculatorViewController" customModule="CalculatorApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="PUc-51-BKJ" userLabel="Outter View">
+                    <view key="view" contentMode="scaleToFill" id="PUc-51-BKJ" userLabel="Outter View">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
