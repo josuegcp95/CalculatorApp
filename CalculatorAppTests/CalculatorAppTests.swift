@@ -4,7 +4,7 @@ import XCTest
 @testable import CalculatorApp
 
 class CalculatorAppTests: XCTestCase {
-    // sut: System Under Test
+    /// sut: System Under Test
     var sut: CalculatorViewController!
 
     //MARK: Tests Setup

@@ -15,7 +15,7 @@
 - XCTest
 
 ## What I've Learned:
-- How to work with Storyboard, Autolayout, and stack views
+- How to work with storyboard, auto layout, and stack views
 - How to write logic to perform math operations
 - How to write unit tests
 
