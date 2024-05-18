@@ -80,11 +80,11 @@
 			children = (
 				3318638928358548006A1CE7 /* AppDelegate.swift */,
 				3318638B28358548006A1CE7 /* SceneDelegate.swift */,
-				334E1C052890C1020002AAE3 /* Controller */,
 				3318638F28358548006A1CE7 /* Main.storyboard */,
 				331863942835854A006A1CE7 /* LaunchScreen.storyboard */,
 				331863922835854A006A1CE7 /* Assets.xcassets */,
 				331863972835854A006A1CE7 /* Info.plist */,
+				334E1C052890C1020002AAE3 /* Controller */,
 			);
 			path = CalculatorApp;
 			sourceTree = "<group>";
@@ -380,6 +380,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -409,6 +410,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
