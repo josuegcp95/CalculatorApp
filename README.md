@@ -1,8 +1,11 @@
 # CalculatorApp
 
 ## Screenshots
-![CalculatorApp(1)](https://user-images.githubusercontent.com/82785695/181600468-de4279b3-5998-429e-b933-1ca121026b76.png)
-![CalculatorApp(2)](https://user-images.githubusercontent.com/82785695/181600479-ddbab805-638b-4cde-b403-9cc1c9f77b14.png)
+![CalculatorApp(1)](https://github.com/josuegcp95/CalculatorApp/assets/82785695/6dc85650-bcee-4de5-99b5-ed21a340e7fc)
+![CalculatorApp(2)](https://github.com/josuegcp95/CalculatorApp/assets/82785695/037aa58a-5142-4d33-b0dc-a1987d7cf9b6)
+![CalculatorApp(3)](https://github.com/josuegcp95/CalculatorApp/assets/82785695/d95e21a9-c6b4-44cf-9734-c15c8fdcb6ee)
+![CalculatorApp(4)](https://github.com/josuegcp95/CalculatorApp/assets/82785695/c6e3aea4-6b38-4b32-9480-ce653440d0f2)
+
 
 ## Description
 - This is a calculator iOS application
